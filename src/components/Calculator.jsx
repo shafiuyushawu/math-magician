@@ -1,8 +1,10 @@
+import CalculatorScreen from './CalculatorScreen';
+
 function Calculator() {
   return (
     <>
-      <div className="text-xl flex flex-col justify-center">
-        <div className=" rounded-t-sm h-10 w-[20%] bg-slate-400 text-right text-white p-2">0</div>
+      <div className="text-xl flex flex-col justify-center p-10">
+        <CalculatorScreen />
         <div>
           <div className="btn text-xl w-[5%] bg-slate-200">AC</div>
           <div className="btn text-xl w-[5%] bg-slate-200">+/-</div>
