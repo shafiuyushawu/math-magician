@@ -1,9 +1,11 @@
 import Calculator from './components/Calculator';
+import Quotes from './components/Quotes';
 
-function App() {
+const App = () => {
   return (
     <>
       <Calculator />
+      <Quotes />
     </>
   );
 }
