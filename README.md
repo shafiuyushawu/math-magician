@@ -169,7 +169,7 @@ Shafiu Ibn Yushawu
 
 Contributions, issues, and feature requests are welcome!
 
-[Kindly raise issue here](https://github.com/shafiuyushawu/math-magicians/issues)
+[Kindly raise issue here](https://github.com/shafiuyushawu/math-magician/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
