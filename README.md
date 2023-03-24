@@ -88,7 +88,7 @@ To get the content of this project locally you need to run the following command
 
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/shafiuyushawu/math-magicians
+git clone https://github.com/shafiuyushawu/math-magician
 ```
 2. To access cloned directory run:
 ```bash
@@ -169,7 +169,7 @@ Shafiu Ibn Yushawu
 
 Contributions, issues, and feature requests are welcome!
 
-[Kindly raise issue here](https://github.com/shafiuyushawu/math-magicians/issues)
+[Kindly raise issue here](https://github.com/shafiuyushawu/math-magician/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
