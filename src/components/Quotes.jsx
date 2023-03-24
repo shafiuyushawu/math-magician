@@ -9,12 +9,13 @@ const Quotes = () => {
 
   useEffect(() => {
     const category = 'happiness';
+    const apiKey = 'Oy3qfj1OKFaF8ZyWqgnb8g==EPLPJ99iT2G8WsUL';
 
     setLoading(true);
-    axios.get('https://api.api-ninjas.com/v1/quotes', {
-      params: { category },
+
+    axios.get(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
       headers: {
-        'X-Api-Key': 'HmE/CVXQyHmYONdR03v5PA==RVOBKSCgWyZif3BP',
+        'X-Api-Key': apiKey,
       },
     })
       .then((response) => {
