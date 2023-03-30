@@ -13,11 +13,12 @@ const Quotes = () => {
 
     setLoading(true);
 
-    axios.get(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
-      headers: {
-        'X-Api-Key': apiKey,
-      },
-    })
+    axios
+      .get(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
+        headers: {
+          'X-Api-Key': apiKey,
+        },
+      })
       .then((response) => {
         const data = response.data[0];
         setQuote(data.quote);
@@ -31,20 +32,21 @@ const Quotes = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className="flex flex-col justify-center h-screen">Loading...</p>;
   }
   if (error) {
     return <p>{error}</p>;
   }
 
   return (
-    <div>
+    <div className="flex flex-col justify-center h-screen">
       <p>
         &ldquo;
         {quote}
-        &rdquo;
+        &rdquo; -
+        {' '}
+        {author}
       </p>
-      <p>{author}</p>
     </div>
   );
 };
