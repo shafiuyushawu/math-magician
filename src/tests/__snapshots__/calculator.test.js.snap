@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculatorScreen renders correctly 1`] = `
+<div>
+  <div
+    class="rounded-sm h-20 w-[80%] bg-slate-400 text-5xl text-right text-white p-2"
+    data-testid="calculator-screen"
+  >
+    0
+  </div>
+</div>
+`;

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 
 const Quotes = () => {
   const [quote, setQuote] = useState('');
@@ -13,20 +12,20 @@ const Quotes = () => {
 
     setLoading(true);
 
-    axios
-      .get(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
-        headers: {
-          'X-Api-Key': apiKey,
-        },
-      })
-      .then((response) => {
-        const data = response.data[0];
-        setQuote(data.quote);
-        setAuthor(data.author);
+    fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
+      headers: {
+        'X-Api-Key': apiKey,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        const { quote, author } = data[0];
+        setQuote(quote);
+        setAuthor(author);
         setLoading(false);
       })
       .catch(() => {
-        setError('Error displaying quates');
+        setError('Error displaying quotes');
         setLoading(false);
       });
   }, []);
