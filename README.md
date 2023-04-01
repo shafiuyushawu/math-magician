@@ -66,8 +66,7 @@ A single page react application where users can make mathematical calculations w
 ## 🚀 Live Demo <a name="live-demo"></a>
 Coming soon!
 
-- **GitHub Pages:**
-Coming soon!
+- **[Math Magician](https://math-magician-i1w1.onrender.com)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
